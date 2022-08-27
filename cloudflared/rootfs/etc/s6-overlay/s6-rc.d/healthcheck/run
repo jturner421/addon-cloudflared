@@ -34,7 +34,7 @@ do
 			bashio::log.warning "Connection attempt ${counter}/${threshold} before restart."
 		fi
 
-		while ! nc -zw1 1.1.1.1 443
+		while ! nc -zw1 1.0.0.1 443
 		do
 			bashio::log.warning "Host has no internet connection, waiting 30 seconds..."
 			sleep 30
